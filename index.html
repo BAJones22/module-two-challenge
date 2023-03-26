@@ -14,15 +14,15 @@
         <nav>
             <img src="assets/images/logo.jpg" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><a href="#">My Work</a></li>
-                <li><a href="#">Contact Info</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#services">My Services</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact Info</a></li>
             </ul>
         </nav>
         <div class="header-text">
-            <p>Full-Stack Developer</p>
             <h1> Hi, I'm <span>Brooke</span> Adlesperger-Jones.</h1>
+            <p>Full-Stack Developer</p>
         </div>
     </div>
 </div>
@@ -31,7 +31,7 @@
 <div id="about">
     <div class="container">
         <div class="row">
-            <div class="about-col-1">
+            <div id ="about" class="about-col-1">
                 <img src="assets/images/117640273_3525971614093654_181165065431988762_n.jpg">
             </div>
             <div class="about-col-2">
@@ -88,46 +88,60 @@
                 <i class="fa-brands fa-app-store" style="color: #aaaaaa;"></i>
                 <h2>App Design</h2>
                 <p>abcdefg</p>
-                <a href="#">LEARN MOREa</a>
+                <a href="#">LEARN MORE</a>
             </div>
-
         </div>
     </div>
 </div>
 
 <!-- -------------portfolio------------- -->
+
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title"> My Work</h1>
+        <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
-                <img src="assets/images/download.jpg">
+                <img src="assets/images/photo-1598327105666-5b89351aff97.jpg">
                 <div class="layer">
-                    <h3>Weather App</h3>
-                    <p>This app keeps you up to date on current weather conditions. Download it from the play store.</p>
+                    <h3>Trivia App</h3>
+                    <p>Challenge your friends with fun trivia questions. Download it from the play store.</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #aaaaaa;"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="assets/images/download-1.jpg">
+                <img src="assets/images/photo-1598327105666-5b89351aff97.jpg">
                 <div class="layer">
                     <h3>Scheduling App</h3>
-                    <p>This app helps business professionals keep accurate scheduling information for employees. Download it from the play store.</p>
+                    <p>An app designed for business professionals to keep up to date employee schedules. Download it from the play store.</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #aaaaaa;"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="assets/images/download-3.jpg">
+                <img src="assets/images/photo-1598327105666-5b89351aff97.jpg">
                 <div class="layer">
-                    <h3>Photo Editor App</h3>
-                    <p>This app is a simple photo editor to help enhance your photos. Download it from the play store.</p>
+                    <h3>Time Saver App</h3>
+                    <p>An application designed to help with time management. Download it from the play store.</p>
                     <a href="#"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #aaaaaa;"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+ 
+<!-- -------------contact------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane" style="color: #aaaaaa;"></i><a href = "mailto: adlesperger22@gmail.com">Send Email</a></p>
+                    <a href="https://github.com/BAJones22"><i class="fa-brands fa-github" style="color: #aaaaaa;"></i></a>
+                    <a href="https://www.linkedin.com/in/brooke-adlesperger-jones-893a9b26b/"><i class="fa-brands fa-linkedin" style="color: #aaaaaa;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script>
 
@@ -143,7 +157,6 @@
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab")
-
     }
 
 </script>
