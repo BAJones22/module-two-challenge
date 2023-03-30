@@ -129,7 +129,8 @@ nav ul li a:hover::after{
 
 .tab-titles{
     display: flex;
-    margin: 20px 0 40px; 
+    margin: 40px 0 40px; 
+    margin-left: 160px;
 }
 
 .tab-links{
@@ -313,14 +314,28 @@ nav ul li a:hover::after{
 
 @media screen and (max-width: 992px) {
     .image, #header {
-        width: fit-content;
+        width: auto;
+    }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        margin-left:5px;
+        text-align: center;
+    }
+
+    .tab-titles {
+        margin-left: 205px;
+    }
+
+    .services-list {
+        display: inline-flex;
     }
   }
 
 @media screen and (max-width: 768px) {
 
     .image, #header {
-        width: fit-content;
+        width: auto;
 
     }
 
@@ -338,14 +353,14 @@ nav ul li a:hover::after{
     .work-list {
         display: inline-flex;
     }
+
+    .tab-titles {
+        margin-left: 105px;
+    }
     
   }
 
   @media screen and (max-width: 576px) {
-   
-    .sub-title {
-        width: 500px;
-    }
 
     .about-col-1, .about-col-2 {
         flex-basis: 100%;
@@ -354,8 +369,23 @@ nav ul li a:hover::after{
     }
 
     .image, #header {
-        width: fit-content;
+        width: auto;
     }
 
+    section {
+        display: contents;
+    }
   
-  }
+    #about {
+        padding: 20px 5%;
+    }
+
+    #about main {
+        display: contents;
+    }
+
+    .tab-titles {
+        margin-left: 55px;
+    }
+   
+  } 
