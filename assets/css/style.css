@@ -19,7 +19,7 @@ body{
     background-position: center;
 }
 
-.container{
+section{
     padding: 10px 10%;
 }
 
@@ -93,7 +93,7 @@ nav ul li a:hover::after{
     color: #ffffff;
 }
 
-.row{
+#about main{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -104,6 +104,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1 img{
+    flex-basis: 35%;
     width: 100%;
     border-radius: 15px;
 }
@@ -213,7 +214,7 @@ nav ul li a:hover::after{
 }
 
 .services-list div:hover{
-    background: #136363;
+    background: rgb(146, 105, 105);
     transform: translateY(-10px);
 }
 
@@ -238,7 +239,7 @@ nav ul li a:hover::after{
 
 .work img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 100px;
     display: block;
     transition: transform 0.5s;
 }
@@ -289,61 +290,72 @@ nav ul li a:hover::after{
 /* ------------contact----------- */
 
 .contact {
-    flex-basis: 35%;
-    margin-top: 10%;
+    flex-basis: 100%;
     background: #5352524f;
     padding: 20px;
-    border-right: 100px;
-    text-align: right;
-}
-
-.contact p{
-    margin-top: 30px;
-    
+    text-align: center;
 }
 
 .contact  p i, .contact a href{
-    margin-right: 15px;
     font-size: 25px;
-    margin-top: 30px;
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
+    margin-right: 10px;
     display: inline-block;
-    transition: transform 0.5s;
-}
-
-.social-icons{
-    margin-top: 20px;
 }
 
 .contact a{
     text-decoration: none;
     font-size: 30px;
     margin-right: 10px;
-    transition: transform 0.5s;
 }
 
-.contact a:hover{
-    transform: translateY(-5px);
-}
 
 /* ------------media screens----------- */
 
 @media screen and (max-width: 992px) {
-    header {
-      background: #101010;
+    .image, #header {
+        width: fit-content;
     }
   }
 
 @media screen and (max-width: 768px) {
-    nav {
-      background-color: #131212;
+
+    .image, #header {
+        width: fit-content;
+
     }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        margin-left:5px;
+        text-align: center;
+    }
+
+    .services-list{
+        padding: 50px 0;
+        display: inline-flex;
+    }
+
+    .work-list {
+        display: inline-flex;
+    }
+    
   }
 
   @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #131212;
+   
+    .sub-title {
+        width: 500px;
     }
+
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+        margin-left:5px;
+        text-align: center;
+    }
+
+    .image, #header {
+        width: fit-content;
+    }
+
+  
   }
