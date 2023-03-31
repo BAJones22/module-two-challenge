@@ -19,7 +19,7 @@ The usage of this website is for future employers to be able to easily navigate 
 
 ## Credits
 
-I followed the tutorial at the following link: src="./https://www.youtube.com/watch?v=0YFrGy_mzjY"
+Referenced the tutorial at the following link: src="./https://www.youtube.com/watch?v=0YFrGy_mzjY"
 
 ## License
 
